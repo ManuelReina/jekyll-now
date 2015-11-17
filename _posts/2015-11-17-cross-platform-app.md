@@ -34,5 +34,8 @@ I like the idea of “**one UI to rule them all**” except maybe for web, but t
 
 I would like to **create 3 blog posts** (if my 3 year old son lets me):
 1. In my first post I will create an **Angular hello-world** app with TypeScript and VS 2015.
+
 2. The second will be focused on creating a **NativeScript app in Android.**
+
 3. In the third I will **reuse angular components** between the web app and the native android app.
+
