@@ -6,6 +6,7 @@ published: true
 
 
 
+
 It’s been a while since I’ve been looking for a way of reusing the business logic of our projects in a cross platform project. 
 
 I started with angular 1.x and loved it. We also started to integrate typescript, which added more sugar to the formula.
@@ -35,5 +36,3 @@ I would like to **create 3 blog posts** (if my 3 year old son lets me):
 1. In my first post I will create an **Angular hello-world** app with TypeScript and VS 2015.
 2. The second will be focused on creating a **NativeScript app in Android.**
 3. In the third I will **reuse angular components** between the web app and the native android app.
-
-
