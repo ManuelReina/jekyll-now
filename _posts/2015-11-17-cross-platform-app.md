@@ -8,6 +8,7 @@ published: true
 
 
 
+
 It’s been a while since I’ve been looking for a way of reusing the business logic of our projects in a cross platform project. 
 
 I started with angular 1.x and loved it. We also started to integrate typescript, which added more sugar to the formula.
@@ -24,7 +25,7 @@ Well I think Angular 1.x made our lives so easy, but they know that web developm
 
 ##  Why TypeScript?
 
-I love typed languages so for me javascript + typescript is a very good combination.
+I like strongly typed languages so for me javascript + typescript is a very good combination.
 
 ## Why NativeScript?
 
