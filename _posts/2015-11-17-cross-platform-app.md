@@ -6,7 +6,7 @@ published: true
 
 
 
-
+Update: Since I have no time, I am postponing this project. I still love this project but right now I am more focused in progressive web apps.
 
 
 It’s been a while since I’ve been looking for a way of reusing the business logic of our projects in a cross platform project. 
