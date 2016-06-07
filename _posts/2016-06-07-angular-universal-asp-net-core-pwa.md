@@ -26,17 +26,18 @@ This post **summarizes** all the steps and the issues I had in order to put ever
 
 **RESOURCES**
 
-1-	In order to create a template capable of rendering **angular 2 with ASP.NET Core**, follow [Steve Sanderson blog post]. Note: I am using the RC1 template version.
-
-2- **[Progressive web apps]** (Service worker, manifest, push notifications, home screen installation, etc).
-
-
+ - In order to create a template capable of rendering **angular 2 with ASP.NET Core**, follow [Steve Sanderson blog post]. Note: I am using the RC1 template version.
+ - **[Progressive web apps]** (Service worker, manifest, push notifications, home screen installation, etc).
+ - Angular 2:
+	 - https://angular.io/docs/js/latest/quickstart.html
+	 - If you have a pluralsight account, I recommend [John Papa's pluralsight course](https://app.pluralsight.com/library/courses/angular-2-first-look)
+	 - http://blog.thoughtram.io/
+	 - 
 
 **ISSUES**
 
-1-	I am using **Visual Studio 2015 update 2** and when I updated to Angular 2 RC I had an issue with the VS typescript compiler. It threw the error “map does not exist on observable response”. It wasn’t big problem because I am using webpack to compile typescript but anyway here it’s the [solution]. 
-
-2-	**Azure**. I am newbie with Azure and I had a few issues to make this project work.
+ 1. 	I am using **Visual Studio 2015 update 2** and when I updated to Angular 2 RC I had an issue with the VS typescript compiler. It threw the error “map does not exist on observable response”. It wasn’t big problem because I am using webpack to compile typescript but anyway here it’s the [solution]. 
+ 2. **Azure**. I am newbie with Azure and I had a few issues to make this project work.
 
  -   Everything worked like a charm in IIS Express but when I published in Azure I got errors.
  - As I couldn’t get much info about the errors I published locally.
