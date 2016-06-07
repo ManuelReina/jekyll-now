@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Progressive Web App rendered with Angular Universal and ASP.NET Core
-published: false
+published: true
 ---
 
 I’ve always wanted to start a project where I could render an angular 2 web app with ASP.NET Core. Now, thanks to Steve Sanderson, it’s very easy. 
@@ -22,29 +22,29 @@ This post summarizes all the steps and the issues I had in order to put everythi
  
   o	As I couldn’t get much info about the errors I published locally.
   
- 	I found out that the node dependencies weren’t installed.
+  	I found out that the node dependencies weren’t installed.
  
- 	I installed them and then I had another error:  Cannot find module './wwwroot/dist/vendor-manifest.json'.
+  	I installed them and then I had another error:  Cannot find module './wwwroot/dist/vendor-manifest.json'.
  
   	I open [this issue] and Andrei Tserakhau helped me solve it.
  
- o	I couldn’t get the project.json “scripts” section work when publishing in Azure, so I decided to install everything manually.
+  o	I couldn’t get the project.json “scripts” section work when publishing in Azure, so I decided to install everything manually.
 
- o	Make sure your azure instance has an NPM version 3+. 
+  o	Make sure your azure instance has an NPM version 3+. 
 
- 	Open the Kudu tool, under the tools menu.
+  	Open the Kudu tool, under the tools menu.
  
- 	See available “Runtime versions”.
+  	See available “Runtime versions”.
  
- 	Go back to your resource in Azure and change the app setting “WEBSITE_NODE_DEFAULT_VERSION” with the corresponding version. Note: I use 5.4.0
+  	Go back to your resource in Azure and change the app setting “WEBSITE_NODE_DEFAULT_VERSION” with the corresponding version. Note: I use 5.4.0
  
- o	NPM install
+  o	NPM install
 
   	Use the KUDU tool again to open a “Debug console”. 
-      
- 	Install webpack globally. NPM install webpack –g
+  
+  	Install webpack globally. NPM install webpack –g
  
- 	Now navigate to the src of your app. E.g. D:\home\site\src
+  	Now navigate to the src of your app. E.g. D:\home\site\src
  
   	Install the rest of dependencies. NPM install.
  
