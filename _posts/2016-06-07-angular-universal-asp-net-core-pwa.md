@@ -6,7 +6,19 @@ published: true
 
 I’ve always wanted to start a project where I could render an angular 2 web app with ASP.NET Core. Now, thanks to Steve Sanderson, it’s very easy. 
 
-Also I wanted to play a little bit with Progressive Web Apps, which will enable offline access, push notifications, home screen installation, etc.
+Also I wanted to play a little bit with Progressive Web Apps, which will enable offline access, push notifications, home screen installation, etc and improve my angular 2 skills.
+
+I have created this [github repo](https://github.com/manuelreina/angular2-aspnet5-crud) which contains all the code. This progressive web app is composed of 2 pages, the home page and a simple CRUD page.
+
+**BUILT WITH**
+
+ - Angular 2
+ - ASP.NET Core
+ - Angular Universal
+ - Progressive Web Apps
+ - Webpack
+ - Grunt
+
 
 This post **summarizes** all the steps and the issues I had in order to put everything together.
 
@@ -26,38 +38,26 @@ This post **summarizes** all the steps and the issues I had in order to put ever
 
 2-	**Azure**. I am newbie with Azure and I had a few issues to make this project work.
 
-  o	Everything worked like a charm in IIS Express but when I published in Azure I got errors.
- 
-  o	As I couldn’t get much info about the errors I published locally.
-  
-  	I found out that the node dependencies weren’t installed.
- 
-  	I installed them and then I had another error:  `Cannot find module './wwwroot/dist/vendor-  manifest.json'.`
- 
-  	I open [this issue] and Andrei Tserakhau helped me solve it.
- 
-  o	I couldn’t get the project.json “scripts” section work when publishing in Azure, so I decided to install everything manually.
+ -   Everything worked like a charm in IIS Express but when I published in Azure I got errors.
+ - As I couldn’t get much info about the errors I published locally.
+	 - I found out that the node dependencies weren’t installed.
+	 - I installed them and then I had another error:  `Cannot find module './wwwroot/dist/vendor-  manifest.json'.`
+	 - I open [this issue] and Andrei Tserakhau helped me to solve it.
+ - I couldn’t get the project.json “scripts” section work when publishing in Azure, so I decided to install everything manually.
+ - Make sure your azure instance has an NPM version 3+. 
+	 -   Open the Kudu tool, under the tools menu.
+	 - See available “Runtime versions”.
+	 - Go back to your resource in Azure and change the app setting “WEBSITE_NODE_DEFAULT_VERSION” with the corresponding version. Note: I use 5.4.0
 
-  o	Make sure your azure instance has an NPM version 3+. 
+ - NPM install
+	 - Use the KUDU tool again to open a “Debug console”. 
+	 - Install webpack globally. NPM install webpack –g
+	 - Now navigate to the src of your app. E.g. D:\home\site\src
+	 - Install the rest of dependencies. NPM install.
 
-  	Open the Kudu tool, under the tools menu.
- 
-  	See available “Runtime versions”.
- 
-  	Go back to your resource in Azure and change the app setting “WEBSITE_NODE_DEFAULT_VERSION” with the corresponding version. Note: I use 5.4.0
- 
-  o	NPM install
 
-  	Use the KUDU tool again to open a “Debug console”. 
-  
-  	Install webpack globally. NPM install webpack –g
- 
-  	Now navigate to the src of your app. E.g. D:\home\site\src
- 
-  	Install the rest of dependencies. NPM install.
-
- 
 Hope it helps!
+
 
 [Steve Sanderson blog post]: <http://blog.stevensanderson.com/2016/05/02/angular2-react-knockout-apps-on-aspnet-core>
 [Progressive web apps]: <https://developers.google.com/web/fundamentals/getting-started/your-first-progressive-web-app>
