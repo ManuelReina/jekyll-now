@@ -55,7 +55,7 @@ This post **summarizes** all the steps and the issues I had in order to put ever
 	 - Install webpack globally. NPM install webpack –g
 	 - Now navigate to the src of your app. E.g. D:\home\site\src
 	 - Install the rest of dependencies. NPM install.
-
+ - Finally make sure you don't have duplicate global.json files. In my case I had one under the approot folder and the one of my project. Removing the project's global.json solved my problem, but again, I think it has to do with my project structure and I have to learn more about asp.net 5 and azure deployment.
 
 Hope it helps!
 
