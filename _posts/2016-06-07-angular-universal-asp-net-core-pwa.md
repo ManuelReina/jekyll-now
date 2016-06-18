@@ -19,6 +19,7 @@ I have created this [github repo](https://github.com/manuelreina/angular2-aspnet
  - Webpack
  - Grunt
 
+You can see the demo [here](https://angularuniversal-vnext.azurewebsites.net/)
 
 This post **summarizes** all the steps and the issues I had in order to put everything together.
 
