@@ -5289,7 +5289,7 @@ a.credit {
   .skill-group > div {
     color: rgb(0, 33, 69);
     font-weight: bold;
-    font-size: x-large;
+    font-size: 15px;
     padding-left: 9px;
     margin-bottom: 7px;
 
@@ -5298,6 +5298,7 @@ a.credit {
   .skills li {
     margin: 5px;
     border-radius: 10px !important;
+    padding: 5px 5px;
   }
   .skill-1 {
     font-size: 14px;
